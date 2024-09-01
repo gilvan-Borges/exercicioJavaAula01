@@ -37,8 +37,8 @@ public class Funcionario {
 	public Double getSalario() {
 		return salario;
 	}
-	public void setSalario(String salario) {
-		this.salario =  Double.parseDouble (salario);
+	public void setSalario(Double salario) {
+		this.salario =  salario;
 	}
 	
 	

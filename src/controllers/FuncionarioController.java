@@ -19,14 +19,14 @@ public class FuncionarioController {
 			funcionario.setNome(JOptionPane.showInputDialog("Nome do funcionario: "));
 			funcionario.setMatricula(JOptionPane.showInputDialog("Informe a matricula: "));
 			funcionario.setCpf(JOptionPane.showInputDialog("Infome o CPF: "));
-			funcionario.setSalario(JOptionPane.showInputDialog("Informe o salário: "));
+			funcionario.setSalario(Double.parseDouble(JOptionPane.showInputDialog("Informe o salário: ")));
 			
 			var funcionarioRepository = new FuncionarioRepository();
 			funcionarioRepository.exportarDados(funcionario);
 				
 			
 		} catch (Exception e) {
-				System.out.println("\nErro ao slvar os dados: " + e.getMessage());
+				System.out.println("\nErro ao salvar os dados: " + e.getMessage());
 		}
 	}
 
